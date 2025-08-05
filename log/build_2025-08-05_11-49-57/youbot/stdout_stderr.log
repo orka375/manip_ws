@@ -1,0 +1,113 @@
+running develop
+running egg_info
+creating manip.egg-info
+writing manip.egg-info/PKG-INFO
+writing dependency_links to manip.egg-info/dependency_links.txt
+writing entry points to manip.egg-info/entry_points.txt
+writing requirements to manip.egg-info/requires.txt
+writing top-level names to manip.egg-info/top_level.txt
+writing manifest file 'manip.egg-info/SOURCES.txt'
+reading manifest file 'manip.egg-info/SOURCES.txt'
+writing manifest file 'manip.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/nbf2/manip_ws/install/manip/lib/python3.12/site-packages/manip.egg-link (link to .)
+Installing astolfi script to /home/nbf2/manip_ws/install/manip/lib/manip
+Installing blinker_node script to /home/nbf2/manip_ws/install/manip/lib/manip
+Installing heart_beat_node script to /home/nbf2/manip_ws/install/manip/lib/manip
+Installing lcddisplay script to /home/nbf2/manip_ws/install/manip/lib/manip
+Installing log_node script to /home/nbf2/manip_ws/install/manip/lib/manip
+Installing opcua_client_node script to /home/nbf2/manip_ws/install/manip/lib/manip
+Installing relay_control_node script to /home/nbf2/manip_ws/install/manip/lib/manip
+Installing ro_bridge script to /home/nbf2/manip_ws/install/manip/lib/manip
+Installing simreal_selector script to /home/nbf2/manip_ws/install/manip/lib/manip
+Installing statemachine script to /home/nbf2/manip_ws/install/manip/lib/manip
+Installing vmeter script to /home/nbf2/manip_ws/install/manip/lib/manip
+
+Installed /home/nbf2/manip_ws/build/manip
+running symlink_data
+creating /home/nbf2/manip_ws/install/manip/share/ament_index
+creating /home/nbf2/manip_ws/install/manip/share/ament_index/resource_index
+creating /home/nbf2/manip_ws/install/manip/share/ament_index/resource_index/packages
+symbolically linking /home/nbf2/manip_ws/build/manip/resource/manip -> /home/nbf2/manip_ws/install/manip/share/ament_index/resource_index/packages
+symbolically linking /home/nbf2/manip_ws/build/manip/package.xml -> /home/nbf2/manip_ws/install/manip/share/manip
+creating /home/nbf2/manip_ws/install/manip/share/manip/launch
+symbolically linking /home/nbf2/manip_ws/build/manip/launch/launch_robot.launch.py -> /home/nbf2/manip_ws/install/manip/share/manip/launch
+symbolically linking /home/nbf2/manip_ws/build/manip/launch/rsp.launch.py -> /home/nbf2/manip_ws/install/manip/share/manip/launch
+symbolically linking /home/nbf2/manip_ws/build/manip/launch/launch_sim.launch.py -> /home/nbf2/manip_ws/install/manip/share/manip/launch
+symbolically linking /home/nbf2/manip_ws/build/manip/launch/joystick.launch.py -> /home/nbf2/manip_ws/install/manip/share/manip/launch
+symbolically linking /home/nbf2/manip_ws/build/manip/launch/rviz.launch.py -> /home/nbf2/manip_ws/install/manip/share/manip/launch
+creating /home/nbf2/manip_ws/install/manip/share/manip/description
+symbolically linking /home/nbf2/manip_ws/build/manip/description/manip_all.xacro -> /home/nbf2/manip_ws/install/manip/share/manip/description
+symbolically linking /home/nbf2/manip_ws/build/manip/description/manip_manip.xacro -> /home/nbf2/manip_ws/install/manip/share/manip/description
+symbolically linking /home/nbf2/manip_ws/build/manip/description/robot.urdf.xacro -> /home/nbf2/manip_ws/install/manip/share/manip/description
+symbolically linking /home/nbf2/manip_ws/build/manip/description/ros2_control.xacro -> /home/nbf2/manip_ws/install/manip/share/manip/description
+creating /home/nbf2/manip_ws/install/manip/share/manip/config
+symbolically linking /home/nbf2/manip_ws/build/manip/config/controllers.yaml -> /home/nbf2/manip_ws/install/manip/share/manip/config
+symbolically linking /home/nbf2/manip_ws/build/manip/config/mapper_params_online_async.yaml -> /home/nbf2/manip_ws/install/manip/share/manip/config
+symbolically linking /home/nbf2/manip_ws/build/manip/config/gaz_ros2_ctl_use_sim.yaml -> /home/nbf2/manip_ws/install/manip/share/manip/config
+symbolically linking /home/nbf2/manip_ws/build/manip/config/joystick.yaml -> /home/nbf2/manip_ws/install/manip/share/manip/config
+symbolically linking /home/nbf2/manip_ws/build/manip/config/gz_bridge.yaml -> /home/nbf2/manip_ws/install/manip/share/manip/config
+symbolically linking /home/nbf2/manip_ws/build/manip/config/arm_joints.yaml -> /home/nbf2/manip_ws/install/manip/share/manip/config
+symbolically linking /home/nbf2/manip_ws/build/manip/config/rviz_config.rviz -> /home/nbf2/manip_ws/install/manip/share/manip/config
+creating /home/nbf2/manip_ws/install/manip/share/manip/worlds
+symbolically linking /home/nbf2/manip_ws/build/manip/worlds/empty.sdf -> /home/nbf2/manip_ws/install/manip/share/manip/worlds
+symbolically linking /home/nbf2/manip_ws/build/manip/worlds/obstacles2.sdf -> /home/nbf2/manip_ws/install/manip/share/manip/worlds
+symbolically linking /home/nbf2/manip_ws/build/manip/worlds/obstacles.world -> /home/nbf2/manip_ws/install/manip/share/manip/worlds
+symbolically linking /home/nbf2/manip_ws/build/manip/worlds/empty.world -> /home/nbf2/manip_ws/install/manip/share/manip/worlds
+creating /home/nbf2/manip_ws/install/manip/share/manip/views
+symbolically linking /home/nbf2/manip_ws/build/manip/views/rviz_config2.rviz -> /home/nbf2/manip_ws/install/manip/share/manip/views
+symbolically linking /home/nbf2/manip_ws/build/manip/views/rviz_config.rviz -> /home/nbf2/manip_ws/install/manip/share/manip/views
+creating /home/nbf2/manip_ws/install/manip/share/manip/src
+symbolically linking /home/nbf2/manip_ws/build/manip/src/__pycache__/OpcUaClient.cpython-312.pyc -> /home/nbf2/manip_ws/install/manip/share/manip/src
+symbolically linking /home/nbf2/manip_ws/build/manip/src/__pycache__/__init__.cpython-312.pyc -> /home/nbf2/manip_ws/install/manip/share/manip/src
+symbolically linking /home/nbf2/manip_ws/build/manip/src/__pycache__/I2C_LCD_Driver.cpython-312.pyc -> /home/nbf2/manip_ws/install/manip/share/manip/src
+symbolically linking /home/nbf2/manip_ws/build/manip/src/__pycache__/ROBridge.cpython-312.pyc -> /home/nbf2/manip_ws/install/manip/share/manip/src
+symbolically linking /home/nbf2/manip_ws/build/manip/src/__init__.py -> /home/nbf2/manip_ws/install/manip/share/manip/src
+creating /home/nbf2/manip_ws/install/manip/share/manip/meshes
+creating /home/nbf2/manip_ws/install/manip/share/manip/meshes/sensors
+symbolically linking /home/nbf2/manip_ws/build/manip/meshes/sensors/asus_xtion_pro_live_base.dae -> /home/nbf2/manip_ws/install/manip/share/manip/meshes/sensors
+symbolically linking /home/nbf2/manip_ws/build/manip/meshes/sensors/asus_xtion_pro_live_camera.png -> /home/nbf2/manip_ws/install/manip/share/manip/meshes/sensors
+symbolically linking /home/nbf2/manip_ws/build/manip/meshes/sensors/hokuyo.dae -> /home/nbf2/manip_ws/install/manip/share/manip/meshes/sensors
+symbolically linking /home/nbf2/manip_ws/build/manip/meshes/sensors/kinect.tga -> /home/nbf2/manip_ws/install/manip/share/manip/meshes/sensors
+symbolically linking /home/nbf2/manip_ws/build/manip/meshes/sensors/hokuyo_convex.dae -> /home/nbf2/manip_ws/install/manip/share/manip/meshes/sensors
+symbolically linking /home/nbf2/manip_ws/build/manip/meshes/sensors/asus_xtion_pro_live_base.png -> /home/nbf2/manip_ws/install/manip/share/manip/meshes/sensors
+symbolically linking /home/nbf2/manip_ws/build/manip/meshes/sensors/kinect.dae -> /home/nbf2/manip_ws/install/manip/share/manip/meshes/sensors
+symbolically linking /home/nbf2/manip_ws/build/manip/meshes/sensors/asus_xtion_pro_live_camera.dae -> /home/nbf2/manip_ws/install/manip/share/manip/meshes/sensors
+symbolically linking /home/nbf2/manip_ws/build/manip/meshes/sensors/microsoft_lifecam.dae -> /home/nbf2/manip_ws/install/manip/share/manip/meshes/sensors
+creating /home/nbf2/manip_ws/install/manip/share/manip/meshes/manip_arm
+symbolically linking /home/nbf2/manip_ws/build/manip/meshes/manip_arm/arm2_convex.dae -> /home/nbf2/manip_ws/install/manip/share/manip/meshes/manip_arm
+symbolically linking /home/nbf2/manip_ws/build/manip/meshes/manip_arm/arm2.dae -> /home/nbf2/manip_ws/install/manip/share/manip/meshes/manip_arm
+symbolically linking /home/nbf2/manip_ws/build/manip/meshes/manip_arm/arm0.dae -> /home/nbf2/manip_ws/install/manip/share/manip/meshes/manip_arm
+symbolically linking /home/nbf2/manip_ws/build/manip/meshes/manip_arm/arm_joint_3_convex.stl -> /home/nbf2/manip_ws/install/manip/share/manip/meshes/manip_arm
+symbolically linking /home/nbf2/manip_ws/build/manip/meshes/manip_arm/arm0_convex.stl -> /home/nbf2/manip_ws/install/manip/share/manip/meshes/manip_arm
+symbolically linking /home/nbf2/manip_ws/build/manip/meshes/manip_arm/arm_joint_2_convex.stl -> /home/nbf2/manip_ws/install/manip/share/manip/meshes/manip_arm
+symbolically linking /home/nbf2/manip_ws/build/manip/meshes/manip_arm/arm5.dae -> /home/nbf2/manip_ws/install/manip/share/manip/meshes/manip_arm
+symbolically linking /home/nbf2/manip_ws/build/manip/meshes/manip_arm/arm3.dae -> /home/nbf2/manip_ws/install/manip/share/manip/meshes/manip_arm
+symbolically linking /home/nbf2/manip_ws/build/manip/meshes/manip_arm/arm4.dae -> /home/nbf2/manip_ws/install/manip/share/manip/meshes/manip_arm
+symbolically linking /home/nbf2/manip_ws/build/manip/meshes/manip_arm/arm1.dae -> /home/nbf2/manip_ws/install/manip/share/manip/meshes/manip_arm
+symbolically linking /home/nbf2/manip_ws/build/manip/meshes/manip_arm/arm_joint_1_convex.stl -> /home/nbf2/manip_ws/install/manip/share/manip/meshes/manip_arm
+symbolically linking /home/nbf2/manip_ws/build/manip/meshes/manip_arm/arm5_convex.dae -> /home/nbf2/manip_ws/install/manip/share/manip/meshes/manip_arm
+symbolically linking /home/nbf2/manip_ws/build/manip/meshes/manip_arm/arm2_convex.stl -> /home/nbf2/manip_ws/install/manip/share/manip/meshes/manip_arm
+symbolically linking /home/nbf2/manip_ws/build/manip/meshes/manip_arm/arm4_convex.dae -> /home/nbf2/manip_ws/install/manip/share/manip/meshes/manip_arm
+symbolically linking /home/nbf2/manip_ws/build/manip/meshes/manip_arm/arm_joint_5_convex.stl -> /home/nbf2/manip_ws/install/manip/share/manip/meshes/manip_arm
+symbolically linking /home/nbf2/manip_ws/build/manip/meshes/manip_arm/arm3_convex.dae -> /home/nbf2/manip_ws/install/manip/share/manip/meshes/manip_arm
+symbolically linking /home/nbf2/manip_ws/build/manip/meshes/manip_arm/arm_joint_4_convex.stl -> /home/nbf2/manip_ws/install/manip/share/manip/meshes/manip_arm
+symbolically linking /home/nbf2/manip_ws/build/manip/meshes/manip_arm/arm1_convex.dae -> /home/nbf2/manip_ws/install/manip/share/manip/meshes/manip_arm
+symbolically linking /home/nbf2/manip_ws/build/manip/meshes/manip_arm/arm0_convex.dae -> /home/nbf2/manip_ws/install/manip/share/manip/meshes/manip_arm
+creating /home/nbf2/manip_ws/install/manip/share/manip/meshes/manip_base
+symbolically linking /home/nbf2/manip_ws/build/manip/meshes/manip_base/front-left_wheel.dae -> /home/nbf2/manip_ws/install/manip/share/manip/meshes/manip_base
+symbolically linking /home/nbf2/manip_ws/build/manip/meshes/manip_base/base_frame.dae -> /home/nbf2/manip_ws/install/manip/share/manip/meshes/manip_base
+symbolically linking /home/nbf2/manip_ws/build/manip/meshes/manip_base/back-right_wheel.dae -> /home/nbf2/manip_ws/install/manip/share/manip/meshes/manip_base
+symbolically linking /home/nbf2/manip_ws/build/manip/meshes/manip_base/base.dae -> /home/nbf2/manip_ws/install/manip/share/manip/meshes/manip_base
+symbolically linking /home/nbf2/manip_ws/build/manip/meshes/manip_base/base_convex.stl -> /home/nbf2/manip_ws/install/manip/share/manip/meshes/manip_base
+symbolically linking /home/nbf2/manip_ws/build/manip/meshes/manip_base/back-left_wheel.dae -> /home/nbf2/manip_ws/install/manip/share/manip/meshes/manip_base
+symbolically linking /home/nbf2/manip_ws/build/manip/meshes/manip_base/base_convex.dae -> /home/nbf2/manip_ws/install/manip/share/manip/meshes/manip_base
+symbolically linking /home/nbf2/manip_ws/build/manip/meshes/manip_base/front-right_wheel.dae -> /home/nbf2/manip_ws/install/manip/share/manip/meshes/manip_base
+creating /home/nbf2/manip_ws/install/manip/share/manip/meshes/manip_gripper
+symbolically linking /home/nbf2/manip_ws/build/manip/meshes/manip_gripper/finger.dae -> /home/nbf2/manip_ws/install/manip/share/manip/meshes/manip_gripper
+symbolically linking /home/nbf2/manip_ws/build/manip/meshes/manip_gripper/palm_convex.dae -> /home/nbf2/manip_ws/install/manip/share/manip/meshes/manip_gripper
+symbolically linking /home/nbf2/manip_ws/build/manip/meshes/manip_gripper/palm.dae -> /home/nbf2/manip_ws/install/manip/share/manip/meshes/manip_gripper
+symbolically linking /home/nbf2/manip_ws/build/manip/meshes/manip_gripper/finger_convex.dae -> /home/nbf2/manip_ws/install/manip/share/manip/meshes/manip_gripper
+creating /home/nbf2/manip_ws/install/manip/share/manip/meshes/manip_plate
+symbolically linking /home/nbf2/manip_ws/build/manip/meshes/manip_plate/plate.dae -> /home/nbf2/manip_ws/install/manip/share/manip/meshes/manip_plate
+symbolically linking /home/nbf2/manip_ws/build/manip/meshes/manip_plate/plate_convex.dae -> /home/nbf2/manip_ws/install/manip/share/manip/meshes/manip_plate

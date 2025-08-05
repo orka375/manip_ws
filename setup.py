@@ -8,7 +8,7 @@ from setuptools import find_packages
 
 
 
-package_name = 'youbot'
+package_name = 'manip'
 resource_file = os.path.join('resource', package_name)
 
 # Ensure the resource marker file exists
@@ -33,7 +33,7 @@ for folder in ['launch', 'description', 'config','worlds','views','src']:
     if files:
         data_files.append((f'share/{package_name}/{folder}', files))
 
-for folder in ['meshes/sensors','meshes/youbot_arm','meshes/youbot_base','meshes/youbot_gripper','meshes/youbot_plate',]:
+for folder in ['meshes/sensors','meshes/manip_arm','meshes/manip_base','meshes/manip_gripper','meshes/manip_plate',]:
     files = glob(f'{folder}/**', recursive=True)
     files = [f for f in files if os.path.isfile(f)]  # Only include files, not directories
     if files:
@@ -52,7 +52,7 @@ setup(
     zip_safe=True,
     maintainer='Your Name',
     maintainer_email='your_email@example.com',
-    description='Python-based ROS 2 package for YouBot robot platform',
+    description='Python-based ROS 2 package for manip robot platform',
     license='Apache-2.0',
     tests_require=['pytest'],
     entry_points={

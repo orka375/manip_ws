@@ -7,16 +7,7 @@
                 <plugin>odrive_ros2_control_plugin/ODriveHardwareInterface</plugin>
                 <param name="can">can0</param>
             </hardware>
-            <joint name="wheel_joint_fl">
-                <param name="node_id">2</param>
-                <param name="transmission">26</param>
-                <command_interface name="position"/>
-                <command_interface name="velocity"/>
-                <state_interface name="position"/>
-                <state_interface name="velocity"/>
-            </joint>
-            
-            <joint name="wheel_joint_fr">
+            <joint name="arm_joint_1">
                 <param name="node_id">1</param>
                 <param name="transmission">26</param>
                 <command_interface name="position"/>
@@ -24,9 +15,9 @@
                 <state_interface name="position"/>
                 <state_interface name="velocity"/>
             </joint>
-
-            <joint name="wheel_joint_bl">
-                <param name="node_id">4</param>
+            
+            <joint name="arm_joint_2">
+                <param name="node_id">12</param>
                 <param name="transmission">26</param>
                 <command_interface name="position"/>
                 <command_interface name="velocity"/>
@@ -34,8 +25,26 @@
                 <state_interface name="velocity"/>
             </joint>
 
-            <joint name="wheel_joint_br">
-                <param name="node_id">3</param>
+            <joint name="arm_joint_3">
+                <param name="node_id">13</param>
+                <param name="transmission">26</param>
+                <command_interface name="position"/>
+                <command_interface name="velocity"/>
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+            </joint>
+
+            <joint name="arm_joint_4">
+                <param name="node_id">14</param>
+                <param name="transmission">26</param>
+                <command_interface name="position"/>
+                <command_interface name="velocity"/>
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+            </joint>
+
+            <joint name="arm_joint_5">
+                <param name="node_id">15</param>
                 <param name="transmission">26</param>
                 <command_interface name="position"/>
                 <command_interface name="velocity"/>
@@ -90,15 +99,15 @@
 
     <gazebo>
         <plugin name="gz_ros2_control::GazeboSimROS2ControlPlugin" filename="libgz_ros2_control-system.so">
-            <parameters>$(find youbot)/config/controllers.yaml</parameters>
-            <parameters>$(find youbot)/config/gaz_ros2_ctl_use_sim.yaml</parameters>
+            <parameters>$(find manip)/config/controllers.yaml</parameters>
+            <parameters>$(find manip)/config/gaz_ros2_ctl_use_sim.yaml</parameters>
         </plugin>
     </gazebo>
    
     <!-- <plugin
         name="gz_ros2_control"
         filename="libgz_ros2_control-system.so">
-        <parameters>$(find youbot)/config/controllers.yaml</parameters>
+        <parameters>$(find manip)/config/controllers.yaml</parameters>
     </plugin> -->
 
  

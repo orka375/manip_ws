@@ -14,7 +14,7 @@ import xacro
 
 def generate_launch_description():
 
-    bringup_dir = get_package_share_directory('youbot')
+    bringup_dir = get_package_share_directory('manip')
     launch_dir = os.path.join(bringup_dir, 'launch')
 
     
@@ -35,7 +35,7 @@ def generate_launch_description():
     
     declare_urdf = DeclareLaunchArgument(
         'urdf_file',
-        default_value=os.path.join(bringup_dir, 'description', 'youbot.xacro')
+        default_value=os.path.join(bringup_dir, 'description', 'manip.xacro')
     )
 
     robot_description_config = ParameterValue(Command(['xacro ', xacro_file, ' use_ros2_control:=', use_ros2_control, ' sim_mode:=', use_sim_time]),value_type=str)
@@ -47,7 +47,7 @@ def generate_launch_description():
         output='screen',
         parameters=[params],
         remappings=[
-            ("/youbot/cmd_vel_unstamped", "/cmd_vel"),
+            ("/manip/cmd_vel_unstamped", "/cmd_vel"),
         ],
     )
 

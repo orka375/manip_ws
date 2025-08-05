@@ -4,7 +4,7 @@
 # set -e
 
 echo "==============================================="
-echo " Welcome! Starting your Youbot Launch Sequence"
+echo " Welcome! Starting your manip Launch Sequence"
 echo "==============================================="
 echo " "
 echo "Version 1.0"
@@ -25,10 +25,10 @@ echo "                      "
 source /opt/ros/rolling/setup.bash
 
 # Source your ROS 2 workspace
-source /home/fabian/youbot_ws/install/setup.bash
+source /home/fabian/manip_ws/install/setup.bash
 source /home/fabian/ros2_opcua/install/setup.bash
 
-python3 /home/fabian/youbot_ws/src/lcdtest.py 
+python3 /home/fabian/manip_ws/src/lcdtest.py 
 
 # Run the launch file
-ros2 launch youbot launch_youbot.launch.py
+ros2 launch manip launch_manip.launch.py

@@ -1,0 +1,9 @@
+source;share/manip/hook/pythonpath.ps1
+source;share/manip/hook/pythonpath.dsv
+source;share/manip/hook/pythonpath.sh
+source;share/manip/hook/ament_prefix_path.ps1
+source;share/manip/hook/ament_prefix_path.dsv
+source;share/manip/hook/ament_prefix_path.sh
+source;../../build/manip/share/manip/hook/pythonpath_develop.ps1
+source;../../build/manip/share/manip/hook/pythonpath_develop.dsv
+source;../../build/manip/share/manip/hook/pythonpath_develop.sh

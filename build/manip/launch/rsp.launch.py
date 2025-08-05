@@ -1,0 +1,1 @@
+/home/nbf2/manip_ws/launch/rsp.launch.py

@@ -1,0 +1,1 @@
+/home/nbf2/manip_ws/build/manip/src/__init__.py

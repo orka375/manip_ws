@@ -68,7 +68,7 @@
     </model>
     <include>
       <uri>file://<urdf-string></uri>
-      <name>youbot</name>
+      <name>manip</name>
       <pose>-1.8939915042502365e-08 -1.4025956999390375e-08 0.039960800344746403 2.1145315407033307e-07 -3.486593897176735e-07 6.7857235223648378e-09</pose>
     </include>
     <light name='sun' type='directional'>

@@ -4,14 +4,14 @@
 
     <xacro:arg name="sim_mode" default="true"/>
 
-    <xacro:include filename="youbot_base.xacro" />
-
+    <xacro:include filename="youbot_manip.xacro" />
+<!-- 
     <xacro:include filename="ros2_control.xacro" />
 
+ -->
 
 
-
-    <xacro:include filename="lidar.xacro" />
+   
     
     <!-- <xacro:include filename="camera.xacro" /> -->
     <!-- <xacro:include filename="depth_camera.xacro" /> -->

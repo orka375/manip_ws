@@ -11,7 +11,7 @@ from launch_ros.actions import Node
 
 
 def generate_launch_description():
-    package_name='youbot' #<--- CHANGE ME
+    package_name='manip' #<--- CHANGE ME
     # Get the launch directory
     bringup_dir = get_package_share_directory(package_name)
     launch_dir = os.path.join(bringup_dir, 'launch')

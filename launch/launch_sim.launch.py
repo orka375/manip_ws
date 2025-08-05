@@ -19,9 +19,9 @@ from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
 
-    package_name = 'youbot'
+    package_name = 'manip'
     pkg_share = FindPackageShare(package=package_name).find(package_name)
-    bringup_dir = get_package_share_directory('youbot')
+    bringup_dir = get_package_share_directory('manip')
 
     # -------- Launch Arguments --------
     use_sim_time = LaunchConfiguration('use_sim_time')
