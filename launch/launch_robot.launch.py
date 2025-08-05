@@ -8,6 +8,8 @@ from launch_ros.actions import Node
 from launch_ros.parameter_descriptions import ParameterValue
 from launch_ros.substitutions import FindPackageShare
 import xacro
+from launch.actions import RegisterEventHandler
+from launch.event_handlers import OnProcessStart
 
 
 def generate_launch_description():
@@ -30,13 +32,6 @@ def generate_launch_description():
         parameters=[{'robot_description': robot_description_config}],
     )
 
-    # ----- Joint State Broadcaster -----
-    joint_state_broadcaster_spawner = Node(
-        package='controller_manager',
-        executable='spawner',
-        arguments=['joint_broad', '--controller-manager', '/controller_manager'],
-    )
-
     # ----- Controllers -----
     robot_description = {'robot_description': robot_description_config}
     robot_controllers = PathJoinSubstitution([
@@ -45,6 +40,7 @@ def generate_launch_description():
         'controllers.yaml',
     ])
 
+        # Controller Manager (ros2_control_node)
     control_node = Node(
         package='controller_manager',
         executable='ros2_control_node',
@@ -52,6 +48,34 @@ def generate_launch_description():
         output='both',
     )
 
+    # Spawners (but do not add them directly to LaunchDescription)
+    joint_state_broadcaster_spawner = Node(
+        package='controller_manager',
+        executable='spawner',
+        arguments=['joint_state_broadcaster', '--controller-manager', '/controller_manager'],
+    )
+
+    joint_broad_spawner = Node(
+        package='controller_manager',
+        executable='spawner',
+        arguments=['joint_broad', '--controller-manager', '/controller_manager'],
+    )
+
+    # Event Handlers to ensure controllers spawn after ros2_control_node starts
+    delayed_joint_state_broadcaster = RegisterEventHandler(
+        OnProcessStart(
+            target_action=control_node,
+            on_start=[joint_state_broadcaster_spawner],
+        )
+    )
+
+    delayed_joint_broad = RegisterEventHandler(
+        OnProcessStart(
+            target_action=control_node,
+            on_start=[joint_broad_spawner],
+        )
+    )
+        
     # joint_broad_spawner = Node(
     #     package='controller_manager',
     #     executable='spawner',
@@ -71,18 +95,11 @@ def generate_launch_description():
 
     # ----- Launch Description -----
     return LaunchDescription([
-        DeclareLaunchArgument(
-            'use_sim_time',
-            default_value='false',
-            description='Use sim time if true',
-        ),
-        DeclareLaunchArgument(
-            'gui',
-            default_value='true',
-            description='Start RViz2 automatically with this launch file.',
-        ),
-        control_node,
-        node_robot_state_publisher,
-        joint_state_broadcaster_spawner,
-        # rviz_node,  # Added RViz to the launch sequence
-    ])
+    DeclareLaunchArgument('use_sim_time', default_value='false', description='Use sim time if true'),
+    DeclareLaunchArgument('gui', default_value='true', description='Start RViz2 automatically with this launch file.'),
+    control_node,
+    node_robot_state_publisher,
+    delayed_joint_state_broadcaster,
+    delayed_joint_broad,
+    # rviz_node,
+])
