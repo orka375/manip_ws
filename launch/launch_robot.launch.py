@@ -81,7 +81,7 @@ def generate_launch_description():
 
     robot_controllers = PathJoinSubstitution(
         [
-            FindPackageShare("youbot"),
+            FindPackageShare("manip"),
             "config",
             "controllers.yaml",
         ]
