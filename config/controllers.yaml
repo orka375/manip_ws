@@ -2,7 +2,7 @@ joint_state_broadcaster:
   type: joint_state_broadcaster/JointStateBroadcaster
   publish_rate: 50
 
-mec_dr_cont:
+pos_contr:
   type: position_controllers/JointGroupPositionController
   joints:
     - arm_joint_1

@@ -101,7 +101,7 @@ def generate_launch_description():
     meca_drive_spawner = Node(
             package='controller_manager',
             executable='spawner',
-            arguments=["mec_dr_cont", "--controller-manager", "/controller_manager"],
+            arguments=["pos_contr", "--controller-manager", "/controller_manager"],
             
     )
 
