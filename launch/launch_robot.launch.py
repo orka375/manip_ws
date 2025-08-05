@@ -34,8 +34,8 @@ def generate_launch_description():
 
 
 
-    package_name='youbot'
-    bringup_dir = get_package_share_directory('youbot')
+    package_name='manip'
+    bringup_dir = get_package_share_directory('manip')
 
 
 # ----- Arguments -----
