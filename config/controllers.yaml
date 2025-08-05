@@ -15,7 +15,7 @@ controller_manager:
       type: mecanum_drive_controller/MecanumDriveController
       # type: this_mecanum_drive_controller/This_MecanumDriveController
 
-    joint_broad:
+    joint_state_broadcaster:
       type: joint_state_broadcaster/JointStateBroadcaster
 
 
