@@ -98,7 +98,7 @@ def generate_launch_description():
 
 
 
-    meca_drive_spawner = Node(
+    pos_contr_spawner = Node(
             package='controller_manager',
             executable='spawner',
             arguments=["pos_contr", "--controller-manager", "/controller_manager"],
@@ -109,7 +109,7 @@ def generate_launch_description():
     delayed_meca_drive_spawner = RegisterEventHandler(
         event_handler=OnProcessExit(
             target_action=joint_state_broadcaster_spawner,
-            on_exit=[meca_drive_spawner],
+            on_exit=[pos_contr_spawner],
         )
     )
 
