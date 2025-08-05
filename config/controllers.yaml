@@ -1,12 +1,18 @@
-joint_state_broadcaster:
-  type: joint_state_broadcaster/JointStateBroadcaster
-  publish_rate: 50
+  controller_manager:
+    ros__parameters:
+      update_rate: 30
+      use_sim_time: false
 
-pos_contr:
-  type: position_controllers/JointGroupPositionController
-  joints:
-    - arm_joint_1
-    - arm_joint_2
-    - arm_joint_3
-    - arm_joint_4
-    - arm_joint_5
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+      publish_rate: 50
+
+    pos_contr:
+      type: position_controllers/JointGroupPositionController
+      joints:
+        - arm_joint_1
+        - arm_joint_2
+        - arm_joint_3
+        - arm_joint_4
+        - arm_joint_5
+
