@@ -1,1 +1,0 @@
-/home/nbf2/manip_ws/build/youbot/launch/launch_robot.launch.py

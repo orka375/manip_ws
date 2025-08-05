@@ -1,1 +1,0 @@
-/home/nbf2/manip_ws/build/youbot/src/__init__.py

@@ -1,0 +1,115 @@
+[0.000000] (-) TimerEvent: {}
+[0.001156] (manip) JobQueued: {'identifier': 'manip', 'dependencies': OrderedDict()}
+[0.002729] (manip) JobStarted: {'identifier': 'manip'}
+[0.098976] (-) TimerEvent: {}
+[0.199838] (-) TimerEvent: {}
+[0.300514] (-) TimerEvent: {}
+[0.401625] (-) TimerEvent: {}
+[0.502354] (-) TimerEvent: {}
+[0.602946] (-) TimerEvent: {}
+[0.703630] (-) TimerEvent: {}
+[0.804245] (-) TimerEvent: {}
+[0.904853] (-) TimerEvent: {}
+[1.005408] (-) TimerEvent: {}
+[1.106143] (-) TimerEvent: {}
+[1.206897] (-) TimerEvent: {}
+[1.307857] (-) TimerEvent: {}
+[1.408624] (-) TimerEvent: {}
+[1.509233] (-) TimerEvent: {}
+[1.610069] (-) TimerEvent: {}
+[1.710756] (-) TimerEvent: {}
+[1.811517] (-) TimerEvent: {}
+[1.912087] (-) TimerEvent: {}
+[2.012724] (-) TimerEvent: {}
+[2.113558] (-) TimerEvent: {}
+[2.214141] (-) TimerEvent: {}
+[2.314932] (-) TimerEvent: {}
+[2.415533] (-) TimerEvent: {}
+[2.516095] (-) TimerEvent: {}
+[2.616744] (-) TimerEvent: {}
+[2.717410] (-) TimerEvent: {}
+[2.818153] (-) TimerEvent: {}
+[2.918906] (-) TimerEvent: {}
+[3.019640] (-) TimerEvent: {}
+[3.120341] (-) TimerEvent: {}
+[3.220995] (-) TimerEvent: {}
+[3.321654] (-) TimerEvent: {}
+[3.422347] (-) TimerEvent: {}
+[3.523101] (-) TimerEvent: {}
+[3.623849] (-) TimerEvent: {}
+[3.724477] (-) TimerEvent: {}
+[3.825061] (-) TimerEvent: {}
+[3.925775] (-) TimerEvent: {}
+[4.026548] (-) TimerEvent: {}
+[4.127170] (-) TimerEvent: {}
+[4.227835] (-) TimerEvent: {}
+[4.328394] (-) TimerEvent: {}
+[4.429060] (-) TimerEvent: {}
+[4.529873] (-) TimerEvent: {}
+[4.630560] (-) TimerEvent: {}
+[4.731143] (-) TimerEvent: {}
+[4.831780] (-) TimerEvent: {}
+[4.932419] (-) TimerEvent: {}
+[5.033123] (-) TimerEvent: {}
+[5.134064] (-) TimerEvent: {}
+[5.198725] (manip) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/bfh/manip_ws/build/manip/build', '--no-deps', 'symlink_data'], 'cwd': '/home/bfh/manip_ws/build/manip', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'bfh', 'GZ_CONFIG_PATH': '/opt/ros/rolling/opt/gz_sim_vendor/share/gz:/opt/ros/rolling/opt/sdformat_vendor/share/gz:/opt/ros/rolling/opt/gz_gui_vendor/share/gz:/opt/ros/rolling/opt/gz_transport_vendor/share/gz:/opt/ros/rolling/opt/gz_rendering_vendor/share/gz:/opt/ros/rolling/opt/gz_plugin_vendor/share/gz:/opt/ros/rolling/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/rolling/opt/gz_msgs_vendor/share/gz:/opt/ros/rolling/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/bfh/yb_mecanum_drive_controller/install/this_mecanum_drive_controller/lib:/home/bfh/yb_ros_odrive/install/odrive_ros2_control/lib:/home/bfh/yb_ros_odrive/install/odrive_can/lib:/home/bfh/yb_ros_odrive/odrive_ros2_control/install/odrive_ros2_control/lib:/opt/ros/rolling/opt/zenoh_cpp_vendor/lib:/opt/ros/rolling/opt/gz_sim_vendor/lib:/opt/ros/rolling/opt/gz_sensors_vendor/lib:/opt/ros/rolling/opt/gz_physics_vendor/lib:/opt/ros/rolling/opt/sdformat_vendor/lib:/opt/ros/rolling/opt/gz_gui_vendor/lib:/opt/ros/rolling/opt/gz_transport_vendor/lib:/opt/ros/rolling/opt/gz_rendering_vendor/lib:/opt/ros/rolling/opt/gz_plugin_vendor/lib:/opt/ros/rolling/opt/gz_fuel_tools_vendor/lib:/opt/ros/rolling/opt/gz_msgs_vendor/lib:/opt/ros/rolling/opt/gz_common_vendor/lib:/opt/ros/rolling/opt/gz_math_vendor/lib:/opt/ros/rolling/opt/gz_utils_vendor/lib:/opt/ros/rolling/lib/aarch64-linux-gnu:/opt/ros/rolling/opt/gz_tools_vendor/lib:/opt/ros/rolling/opt/gz_ogre_next_vendor/lib:/opt/ros/rolling/opt/gz_dartsim_vendor/lib:/opt/ros/rolling/opt/gz_cmake_vendor/lib:/opt/ros/rolling/lib', 'HOME': '/home/bfh', 'OLDPWD': '/home/bfh/manip_ws/install', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1897', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1002/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/bfh/yb_ros_odrive/odrive_ros2_control/install:/home/bfh/yb_ros_odrive/install:/home/bfh/manip_ws/install:/home/bfh/yb_mecanum_drive_controller/install:/home/bfh/youbot_ws/install', 'ROS_DISTRO': 'rolling', 'LOGNAME': 'bfh', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1002.slice/user@1002.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'bfh', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/rolling/opt/gz_msgs_vendor/bin:/opt/ros/rolling/opt/gz_tools_vendor/bin:/opt/ros/rolling/opt/gz_ogre_next_vendor/bin:/opt/ros/rolling/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/bfh-desktop:@/tmp/.ICE-unix/1621,unix/bfh-desktop:/tmp/.ICE-unix/1621', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/9389e571_546a_4e28_85c9_38ed8468eaca', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1002', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1002/.mutter-Xwaylandauth.X4M1A3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.125', 'SSH_AUTH_SOCK': '/run/user/1002/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/bfh/yb_mecanum_drive_controller/install/this_mecanum_drive_controller:/home/bfh/yb_ros_odrive/odrive_ros2_control/install/odrive_ros2_control:/home/bfh/yb_ros_odrive/install/odrive_ros2_control:/home/bfh/yb_ros_odrive/install/odrive_can:/home/bfh/manip_ws/install/manip:/home/bfh/youbot_ws/install/youbot:/opt/ros/rolling', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/bfh/manip_ws/build/manip', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/bfh/manip_ws/build/manip/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bfh/manip_ws/install/manip/lib/python3.12/site-packages:/home/bfh/yb_ros_odrive/install/odrive_can/lib/python3.12/site-packages:/home/bfh/manip_ws/build/manip:/home/nbf2/manip_ws/build/manip:/home/bfh/manip_ws/install/manip/lib/python3.12/site-packages:/home/bfh/youbot_ws/build/youbot:/home/bfh/youbot_ws/install/youbot/lib/python3.12/site-packages:/opt/ros/rolling/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/bfh/yb_mecanum_drive_controller/install/this_mecanum_drive_controller:/home/bfh/yb_ros_odrive/install/odrive_ros2_control:/home/bfh/yb_ros_odrive/install/odrive_can:/home/bfh/yb_ros_odrive/odrive_ros2_control/install/odrive_ros2_control:/opt/ros/rolling/opt/gz_sim_vendor:/opt/ros/rolling/opt/gz_sensors_vendor:/opt/ros/rolling/opt/gz_physics_vendor:/opt/ros/rolling/opt/sdformat_vendor:/opt/ros/rolling/opt/gz_gui_vendor:/opt/ros/rolling/opt/gz_transport_vendor:/opt/ros/rolling/opt/gz_rendering_vendor:/opt/ros/rolling/opt/gz_plugin_vendor:/opt/ros/rolling/opt/gz_fuel_tools_vendor:/opt/ros/rolling/opt/gz_msgs_vendor:/opt/ros/rolling/opt/gz_common_vendor:/opt/ros/rolling/opt/gz_math_vendor:/opt/ros/rolling/opt/gz_utils_vendor:/opt/ros/rolling/opt/gz_tools_vendor:/opt/ros/rolling/opt/gz_ogre_next_vendor:/opt/ros/rolling/opt/gz_dartsim_vendor:/opt/ros/rolling/opt/gz_cmake_vendor'}, 'shell': False}
+[5.234219] (-) TimerEvent: {}
+[5.335110] (-) TimerEvent: {}
+[5.436089] (-) TimerEvent: {}
+[5.536787] (-) TimerEvent: {}
+[5.637400] (-) TimerEvent: {}
+[5.738004] (-) TimerEvent: {}
+[5.838610] (-) TimerEvent: {}
+[5.939175] (-) TimerEvent: {}
+[6.039824] (-) TimerEvent: {}
+[6.140393] (-) TimerEvent: {}
+[6.240962] (-) TimerEvent: {}
+[6.341642] (-) TimerEvent: {}
+[6.442202] (-) TimerEvent: {}
+[6.542788] (-) TimerEvent: {}
+[6.643401] (-) TimerEvent: {}
+[6.744011] (-) TimerEvent: {}
+[6.795356] (manip) StdoutLine: {'line': b'running develop\n'}
+[6.844163] (-) TimerEvent: {}
+[6.944772] (-) TimerEvent: {}
+[7.045360] (-) TimerEvent: {}
+[7.145917] (-) TimerEvent: {}
+[7.246526] (-) TimerEvent: {}
+[7.347135] (-) TimerEvent: {}
+[7.447752] (-) TimerEvent: {}
+[7.548343] (-) TimerEvent: {}
+[7.648900] (-) TimerEvent: {}
+[7.740919] (manip) StdoutLine: {'line': b'running egg_info\n'}
+[7.749035] (-) TimerEvent: {}
+[7.829005] (manip) StdoutLine: {'line': b'writing manip.egg-info/PKG-INFO\n'}
+[7.830128] (manip) StdoutLine: {'line': b'writing dependency_links to manip.egg-info/dependency_links.txt\n'}
+[7.831933] (manip) StdoutLine: {'line': b'writing entry points to manip.egg-info/entry_points.txt\n'}
+[7.832776] (manip) StdoutLine: {'line': b'writing requirements to manip.egg-info/requires.txt\n'}
+[7.834035] (manip) StdoutLine: {'line': b'writing top-level names to manip.egg-info/top_level.txt\n'}
+[7.849180] (-) TimerEvent: {}
+[7.927492] (manip) StdoutLine: {'line': b"reading manifest file 'manip.egg-info/SOURCES.txt'\n"}
+[7.932778] (manip) StdoutLine: {'line': b"writing manifest file 'manip.egg-info/SOURCES.txt'\n"}
+[7.949349] (-) TimerEvent: {}
+[8.025942] (manip) StdoutLine: {'line': b'running build_ext\n'}
+[8.049494] (-) TimerEvent: {}
+[8.118449] (manip) StdoutLine: {'line': b'Creating /home/bfh/manip_ws/install/manip/lib/python3.12/site-packages/manip.egg-link (link to .)\n'}
+[8.121649] (manip) StdoutLine: {'line': b'Installing astolfi script to /home/bfh/manip_ws/install/manip/lib/manip\n'}
+[8.122659] (manip) StdoutLine: {'line': b'Installing blinker_node script to /home/bfh/manip_ws/install/manip/lib/manip\n'}
+[8.123570] (manip) StdoutLine: {'line': b'Installing heart_beat_node script to /home/bfh/manip_ws/install/manip/lib/manip\n'}
+[8.124409] (manip) StdoutLine: {'line': b'Installing lcddisplay script to /home/bfh/manip_ws/install/manip/lib/manip\n'}
+[8.125363] (manip) StdoutLine: {'line': b'Installing log_node script to /home/bfh/manip_ws/install/manip/lib/manip\n'}
+[8.126169] (manip) StdoutLine: {'line': b'Installing opcua_client_node script to /home/bfh/manip_ws/install/manip/lib/manip\n'}
+[8.127010] (manip) StdoutLine: {'line': b'Installing relay_control_node script to /home/bfh/manip_ws/install/manip/lib/manip\n'}
+[8.127925] (manip) StdoutLine: {'line': b'Installing ro_bridge script to /home/bfh/manip_ws/install/manip/lib/manip\n'}
+[8.128811] (manip) StdoutLine: {'line': b'Installing simreal_selector script to /home/bfh/manip_ws/install/manip/lib/manip\n'}
+[8.129670] (manip) StdoutLine: {'line': b'Installing statemachine script to /home/bfh/manip_ws/install/manip/lib/manip\n'}
+[8.130566] (manip) StdoutLine: {'line': b'Installing vmeter script to /home/bfh/manip_ws/install/manip/lib/manip\n'}
+[8.131788] (manip) StdoutLine: {'line': b'\n'}
+[8.132324] (manip) StdoutLine: {'line': b'Installed /home/bfh/manip_ws/build/manip\n'}
+[8.132842] (manip) StdoutLine: {'line': b'running symlink_data\n'}
+[8.149787] (-) TimerEvent: {}
+[8.250853] (-) TimerEvent: {}
+[8.339455] (manip) CommandEnded: {'returncode': 0}
+[8.350960] (-) TimerEvent: {}
+[8.401487] (manip) JobEnded: {'identifier': 'manip', 'rc': 0}
+[8.404922] (-) EventReactorShutdown: {}

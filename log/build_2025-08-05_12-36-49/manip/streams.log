@@ -1,0 +1,78 @@
+[3.731s] Invoking command in '/home/bfh/manip_ws/build/manip': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/bfh/manip_ws/build/manip/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bfh/manip_ws/install/manip/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/bfh/manip_ws/build/manip/build --no-deps symlink_data
+[5.181s] running develop
+[6.026s] running egg_info
+[6.027s] creating manip.egg-info
+[6.118s] writing manip.egg-info/PKG-INFO
+[6.119s] writing dependency_links to manip.egg-info/dependency_links.txt
+[6.120s] writing entry points to manip.egg-info/entry_points.txt
+[6.121s] writing requirements to manip.egg-info/requires.txt
+[6.122s] writing top-level names to manip.egg-info/top_level.txt
+[6.123s] writing manifest file 'manip.egg-info/SOURCES.txt'
+[6.209s] reading manifest file 'manip.egg-info/SOURCES.txt'
+[6.213s] writing manifest file 'manip.egg-info/SOURCES.txt'
+[6.298s] running build_ext
+[6.379s] Creating /home/bfh/manip_ws/install/manip/lib/python3.12/site-packages/manip.egg-link (link to .)
+[6.382s] Installing astolfi script to /home/bfh/manip_ws/install/manip/lib/manip
+[6.383s] Installing blinker_node script to /home/bfh/manip_ws/install/manip/lib/manip
+[6.384s] Installing heart_beat_node script to /home/bfh/manip_ws/install/manip/lib/manip
+[6.385s] Installing lcddisplay script to /home/bfh/manip_ws/install/manip/lib/manip
+[6.385s] Installing log_node script to /home/bfh/manip_ws/install/manip/lib/manip
+[6.386s] Installing opcua_client_node script to /home/bfh/manip_ws/install/manip/lib/manip
+[6.387s] Installing relay_control_node script to /home/bfh/manip_ws/install/manip/lib/manip
+[6.387s] Installing ro_bridge script to /home/bfh/manip_ws/install/manip/lib/manip
+[6.388s] Installing simreal_selector script to /home/bfh/manip_ws/install/manip/lib/manip
+[6.389s] Installing statemachine script to /home/bfh/manip_ws/install/manip/lib/manip
+[6.389s] Installing vmeter script to /home/bfh/manip_ws/install/manip/lib/manip
+[6.391s] 
+[6.391s] Installed /home/bfh/manip_ws/build/manip
+[6.392s] running symlink_data
+[6.392s] creating /home/bfh/manip_ws/install/manip/share/ament_index
+[6.393s] creating /home/bfh/manip_ws/install/manip/share/ament_index/resource_index
+[6.394s] creating /home/bfh/manip_ws/install/manip/share/ament_index/resource_index/packages
+[6.394s] symbolically linking /home/bfh/manip_ws/build/manip/resource/manip -> /home/bfh/manip_ws/install/manip/share/ament_index/resource_index/packages
+[6.395s] symbolically linking /home/bfh/manip_ws/build/manip/package.xml -> /home/bfh/manip_ws/install/manip/share/manip
+[6.396s] creating /home/bfh/manip_ws/install/manip/share/manip/launch
+[6.396s] symbolically linking /home/bfh/manip_ws/build/manip/launch/launch_robot.launch.py -> /home/bfh/manip_ws/install/manip/share/manip/launch
+[6.396s] symbolically linking /home/bfh/manip_ws/build/manip/launch/rsp.launch.py -> /home/bfh/manip_ws/install/manip/share/manip/launch
+[6.397s] symbolically linking /home/bfh/manip_ws/build/manip/launch/joystick.launch.py -> /home/bfh/manip_ws/install/manip/share/manip/launch
+[6.397s] symbolically linking /home/bfh/manip_ws/build/manip/launch/rviz.launch.py -> /home/bfh/manip_ws/install/manip/share/manip/launch
+[6.398s] symbolically linking /home/bfh/manip_ws/build/manip/launch/launch_sim.launch.py -> /home/bfh/manip_ws/install/manip/share/manip/launch
+[6.398s] creating /home/bfh/manip_ws/install/manip/share/manip/description
+[6.399s] symbolically linking /home/bfh/manip_ws/build/manip/description/robot.urdf.xacro -> /home/bfh/manip_ws/install/manip/share/manip/description
+[6.399s] symbolically linking /home/bfh/manip_ws/build/manip/description/youbot_manip.xacro -> /home/bfh/manip_ws/install/manip/share/manip/description
+[6.400s] symbolically linking /home/bfh/manip_ws/build/manip/description/ros2_control.xacro -> /home/bfh/manip_ws/install/manip/share/manip/description
+[6.400s] symbolically linking /home/bfh/manip_ws/build/manip/description/youbot_all.xacro -> /home/bfh/manip_ws/install/manip/share/manip/description
+[6.401s] creating /home/bfh/manip_ws/install/manip/share/manip/config
+[6.401s] symbolically linking /home/bfh/manip_ws/build/manip/config/joystick.yaml -> /home/bfh/manip_ws/install/manip/share/manip/config
+[6.402s] symbolically linking /home/bfh/manip_ws/build/manip/config/mapper_params_online_async.yaml -> /home/bfh/manip_ws/install/manip/share/manip/config
+[6.402s] symbolically linking /home/bfh/manip_ws/build/manip/config/gz_bridge.yaml -> /home/bfh/manip_ws/install/manip/share/manip/config
+[6.403s] symbolically linking /home/bfh/manip_ws/build/manip/config/arm_joints.yaml -> /home/bfh/manip_ws/install/manip/share/manip/config
+[6.404s] symbolically linking /home/bfh/manip_ws/build/manip/config/gaz_ros2_ctl_use_sim.yaml -> /home/bfh/manip_ws/install/manip/share/manip/config
+[6.405s] symbolically linking /home/bfh/manip_ws/build/manip/config/rviz_config.rviz -> /home/bfh/manip_ws/install/manip/share/manip/config
+[6.405s] symbolically linking /home/bfh/manip_ws/build/manip/config/controllers.yaml -> /home/bfh/manip_ws/install/manip/share/manip/config
+[6.406s] creating /home/bfh/manip_ws/install/manip/share/manip/worlds
+[6.406s] symbolically linking /home/bfh/manip_ws/build/manip/worlds/empty.world -> /home/bfh/manip_ws/install/manip/share/manip/worlds
+[6.407s] symbolically linking /home/bfh/manip_ws/build/manip/worlds/empty.sdf -> /home/bfh/manip_ws/install/manip/share/manip/worlds
+[6.407s] symbolically linking /home/bfh/manip_ws/build/manip/worlds/obstacles.world -> /home/bfh/manip_ws/install/manip/share/manip/worlds
+[6.408s] symbolically linking /home/bfh/manip_ws/build/manip/worlds/obstacles2.sdf -> /home/bfh/manip_ws/install/manip/share/manip/worlds
+[6.408s] creating /home/bfh/manip_ws/install/manip/share/manip/views
+[6.409s] symbolically linking /home/bfh/manip_ws/build/manip/views/rviz_config2.rviz -> /home/bfh/manip_ws/install/manip/share/manip/views
+[6.409s] symbolically linking /home/bfh/manip_ws/build/manip/views/rviz_config.rviz -> /home/bfh/manip_ws/install/manip/share/manip/views
+[6.410s] creating /home/bfh/manip_ws/install/manip/share/manip/src
+[6.410s] symbolically linking /home/bfh/manip_ws/build/manip/src/__pycache__/OpcUaClient.cpython-312.pyc -> /home/bfh/manip_ws/install/manip/share/manip/src
+[6.411s] symbolically linking /home/bfh/manip_ws/build/manip/src/__pycache__/__init__.cpython-312.pyc -> /home/bfh/manip_ws/install/manip/share/manip/src
+[6.411s] symbolically linking /home/bfh/manip_ws/build/manip/src/__pycache__/ROBridge.cpython-312.pyc -> /home/bfh/manip_ws/install/manip/share/manip/src
+[6.411s] symbolically linking /home/bfh/manip_ws/build/manip/src/__pycache__/I2C_LCD_Driver.cpython-312.pyc -> /home/bfh/manip_ws/install/manip/share/manip/src
+[6.412s] symbolically linking /home/bfh/manip_ws/build/manip/src/__init__.py -> /home/bfh/manip_ws/install/manip/share/manip/src
+[6.412s] creating /home/bfh/manip_ws/install/manip/share/manip/meshes
+[6.413s] creating /home/bfh/manip_ws/install/manip/share/manip/meshes/sensors
+[6.414s] symbolically linking /home/bfh/manip_ws/build/manip/meshes/sensors/kinect.dae -> /home/bfh/manip_ws/install/manip/share/manip/meshes/sensors
+[6.414s] symbolically linking /home/bfh/manip_ws/build/manip/meshes/sensors/microsoft_lifecam.dae -> /home/bfh/manip_ws/install/manip/share/manip/meshes/sensors
+[6.415s] symbolically linking /home/bfh/manip_ws/build/manip/meshes/sensors/hokuyo_convex.dae -> /home/bfh/manip_ws/install/manip/share/manip/meshes/sensors
+[6.416s] symbolically linking /home/bfh/manip_ws/build/manip/meshes/sensors/asus_xtion_pro_live_base.png -> /home/bfh/manip_ws/install/manip/share/manip/meshes/sensors
+[6.417s] symbolically linking /home/bfh/manip_ws/build/manip/meshes/sensors/hokuyo.dae -> /home/bfh/manip_ws/install/manip/share/manip/meshes/sensors
+[6.418s] symbolically linking /home/bfh/manip_ws/build/manip/meshes/sensors/kinect.tga -> /home/bfh/manip_ws/install/manip/share/manip/meshes/sensors
+[6.419s] symbolically linking /home/bfh/manip_ws/build/manip/meshes/sensors/asus_xtion_pro_live_camera.png -> /home/bfh/manip_ws/install/manip/share/manip/meshes/sensors
+[6.420s] symbolically linking /home/bfh/manip_ws/build/manip/meshes/sensors/asus_xtion_pro_live_base.dae -> /home/bfh/manip_ws/install/manip/share/manip/meshes/sensors
+[6.421s] symbolically linking /home/bfh/manip_ws/build/manip/meshes/sensors/asus_xtion_pro_live_camera.dae -> /home/bfh/manip_ws/install/manip/share/manip/meshes/sensors
+[6.599s] Invoked command in '/home/bfh/manip_ws/build/manip' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/bfh/manip_ws/build/manip/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bfh/manip_ws/install/manip/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/bfh/manip_ws/build/manip/build --no-deps symlink_data
