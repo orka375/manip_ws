@@ -2,13 +2,13 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro"  name="robot">
 
 
-    <xacro:arg name="sim_mode" default="true"/>
+    <xacro:arg name="sim_mode" default="false"/>
 
     <xacro:include filename="youbot_manip.xacro" />
-<!-- 
+
     <xacro:include filename="ros2_control.xacro" />
 
- -->
+
 
 
    
