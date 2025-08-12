@@ -100,7 +100,7 @@
     <dynamics damping="1" friction="1"/>
     <!-- damping - N*s/m, N*s*m/rad -->
     <!-- friction - N, N*m -->
-    <limit effort="10000.0" lower="0" upper="5.89920788889" velocity="1.570795"/>
+    <!-- <limit effort="10000.0" lower="0" upper="5.89920788889" velocity="1.570795"/> -->
     <!--effort - N, N*m-->
     <!--velocity - m/s, rad/s-->
     <!--k_position N/m, N/rad-->
@@ -137,7 +137,7 @@
     <axis xyz="0 1 0"/>
     <!--<calibration rising="${arm_2_ref}" falling="${arm_2_ref}"/>-->
     <dynamics damping="1" friction="1"/>
-    <limit effort="10000.0" lower="0" upper="2.70525805556" velocity="1.570795"/>
+    <!-- <limit effort="10000.0" lower="0" upper="2.70525805556" velocity="1.570795"/> -->
   </joint>
 
   
@@ -168,7 +168,7 @@
     <child link="arm_link_3"/>
     <axis xyz="0 1 0"/>
     <dynamics damping="1" friction="1"/>
-    <limit effort="10000.0" lower="-5.1836235" upper="0" velocity="1.570795"/>
+    <!-- <limit effort="10000.0" lower="-5.1836235" upper="0" velocity="1.570795"/> -->
   </joint>
   <link name="arm_link_3">
     <inertial>
@@ -198,7 +198,7 @@
     <axis xyz="0 1 0"/>
     <!--<calibration rising="${arm_4_ref}" falling="${arm_4_ref}"/>-->
     <dynamics damping="1" friction="1"/>
-    <limit effort="10000.0" lower="0" upper="3.57792194444" velocity="1.570795"/>
+    <!-- <limit effort="10000.0" lower="0" upper="3.57792194444" velocity="1.570795"/> -->
   </joint>
   <link name="arm_link_4">
     <inertial>
@@ -228,7 +228,7 @@
     <axis xyz="0 0 -1"/>
     <!--<calibration rising="${arm_5_ref}" falling="${arm_5_ref}"/>-->
     <dynamics damping="1" friction="1"/>
-    <limit effort="10000.0" lower="0" upper="5.84684805556" velocity="1.570795"/>
+    <!-- <limit effort="10000.0" lower="0" upper="5.84684805556" velocity="1.570795"/> -->
   </joint>
   <link name="arm_link_5">
     <inertial>
@@ -277,7 +277,7 @@
     <child link="pen"/>
     <axis xyz="0 0 -1"/>
     <dynamics damping="1" friction="1"/>
-    <limit effort="10000.0" lower="0" upper="5.84684805556" velocity="1.570795"/>
+    <!-- <limit effort="10000.0" lower="0" upper="5.84684805556" velocity="1.570795"/> -->
   </joint>
 
   <gazebo reference="arm_link_0">
