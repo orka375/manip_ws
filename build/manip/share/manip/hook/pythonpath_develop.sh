@@ -1,3 +1,3 @@
 # generated from colcon_core/shell/template/hook_prepend_value.sh.em
 
-_colcon_prepend_unique_value PYTHONPATH "/home/bfh/manip_ws/build/manip"
+_colcon_prepend_unique_value PYTHONPATH "/home/nbf2/manip_ws/build/manip"

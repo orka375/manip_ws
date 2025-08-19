@@ -1,1 +1,1 @@
-/home/bfh/manip_ws/launch/rsp.launch.py
+/home/nbf2/manip_ws/launch/rsp.launch.py

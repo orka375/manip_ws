@@ -64,17 +64,6 @@ def generate_launch_description():
 
 
 
-
-# ----- Joint State Broadcaster -----
-
-    joint_state_broadcaster_spawner = Node(
-        package="controller_manager",
-        executable="spawner",
-        arguments=["joint_state_broadcaster", "--controller-manager", "/controller_manager"],
-    )
-
-
-
 # ----- Controllers -----
 
     robot_description = {"robot_description": robot_description_config}
@@ -88,6 +77,7 @@ def generate_launch_description():
     )
 
 
+
     control_node = Node(
         package="controller_manager",
         executable="ros2_control_node",
@@ -96,22 +86,26 @@ def generate_launch_description():
         output="both",
     )
 
-
+    joint_state_broadcaster_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["joint_state_broadcaster"],
+    )
 
     pos_contr_spawner = Node(
             package='controller_manager',
             executable='spawner',
-            arguments=["pos_contr", "--controller-manager", "/controller_manager"],
+            arguments=["pos_contr"],
             
     )
 
 
-    delayed_meca_drive_spawner = RegisterEventHandler(
-        event_handler=OnProcessExit(
-            target_action=joint_state_broadcaster_spawner,
-            on_exit=[pos_contr_spawner],
-        )
-    )
+    # delayed_meca_drive_spawner = RegisterEventHandler(
+    #     event_handler=OnProcessExit(
+    #         target_action=joint_state_broadcaster_spawner,
+    #         on_exit=[pos_contr_spawner],
+    #     )
+    # )
 
 
 
@@ -120,7 +114,7 @@ def generate_launch_description():
 # ----- Visualization of Robot RVIZ -----
 
 
-    rviz_config_file = os.path.join(bringup_dir, 'config', 'rviz_config.rviz')
+    rviz_config_file = os.path.join(bringup_dir, 'config', 'rviz_config_manip.rviz')
 
     rviz_node = Node(
         package="rviz2",
@@ -166,6 +160,6 @@ def generate_launch_description():
         node_robot_state_publisher,
         joint_state_broadcaster_spawner,
         # delay_rviz_after_joint_state_broadcaster_spawner,
-        delayed_meca_drive_spawner,
+        # delayed_meca_drive_spawner,
 
     ])

@@ -24,3 +24,33 @@ pos_contr:
     state_interfaces:
       - position
       - velocity
+
+
+# controller_manager:
+#   ros__parameters:
+#     update_rate: 100       # faster update for smoother motion
+#     use_sim_time: false
+
+#     joint_state_broadcaster:
+#       type: joint_state_broadcaster/JointStateBroadcaster
+#       publish_rate: 50
+
+#     arm_trajectory_controller:
+#       type: joint_trajectory_controller/JointTrajectoryController
+
+# arm_trajectory_controller:
+#   ros__parameters:
+#     joints:
+#       - arm_joint_1
+#       - arm_joint_2
+#       - arm_joint_3
+#       - arm_joint_4
+#       - arm_joint_5
+#     command_interfaces:
+#       - position
+#     state_interfaces:
+#       - position
+#       - velocity
+#     state_publish_rate: 50.0       # Hz
+#     action_monitor_rate: 20.0      # Hz
+#     allow_partial_joints_goal: false

@@ -97,7 +97,7 @@ def generate_launch_description():
     gazebo = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource([os.path.join(
                     get_package_share_directory('ros_gz_sim'), 'launch', 'gz_sim.launch.py')]),
-                    launch_arguments={'gz_args': ['-r -v2 ', world], 'on_exit_shutdown': 'true'}.items()
+                    launch_arguments={'gz_args': ['-r -v1 ', world], 'on_exit_shutdown': 'true'}.items()
              )
 
     # Run the spawner node from the ros_gz_sim package. The entity name doesn't really matter if you only have a single robot.
@@ -109,32 +109,24 @@ def generate_launch_description():
 
 
     # -------- Controllers --------
-    # joint_state_broadcaster_spawner = Node(
-    #     package='controller_manager',
-    #     executable='spawner',
-    #     arguments=['joint_state_broadcaster', '--ros-args', '--params-file', controllers_config_file],
-    #     output='screen',
-    #     parameters=[{'use_sim_time': use_sim_time}] # Ensure controller manager also uses sim time
-    # )
 
-    # mecanum_drive_spawner = Node(
-    #     package='controller_manager',
-    #     executable='spawner',
-    #     arguments=['mec_dr_cont', '--ros-args', '--params-file', controllers_config_file],
-    #     output='screen',
-    #     parameters=[{'use_sim_time': use_sim_time}] # Ensure controller manager also uses sim time
-    # )
 
-    mec_drive_spawner = Node(
+    pos_contr_spawner = Node(
         package="controller_manager",
         executable="spawner",
-        arguments=["mec_dr_cont"],
+        arguments=["pos_contr"],
     )
+
+    # arm_trajectory_controller_spawner = Node(
+    #     package="controller_manager",
+    #     executable="spawner",
+    #     arguments=["arm_trajectory_controller"],
+    # )
 
     joint_broad_spawner = Node(
         package="controller_manager",
         executable="spawner",
-        arguments=["joint_broad"],
+        arguments=["joint_state_broadcaster"],
     )
 
     # -------- MANIP -------------------
@@ -162,7 +154,7 @@ def generate_launch_description():
     )
 
     # -------- RViz --------
-    rviz_config = os.path.join(pkg_share, 'config', 'rviz_config2.rviz')
+    rviz_config = os.path.join(pkg_share, 'views', 'rviz_config_manip.rviz')
     rviz_node = Node(
         package='rviz2',
         executable='rviz2',
@@ -197,7 +189,8 @@ def generate_launch_description():
         gazebo,
         joystick,
         spawn_entity,
-        mec_drive_spawner,
+        pos_contr_spawner,
+        # arm_trajectory_controller_spawner,
         joint_broad_spawner,
         rviz_node
         # joint_state_broadcaster_spawner,

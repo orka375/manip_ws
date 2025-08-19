@@ -41,6 +41,7 @@ src/__pycache__/ROBridge.cpython-312.pyc
 src/__pycache__/__init__.cpython-312.pyc
 views/rviz_config.rviz
 views/rviz_config2.rviz
+views/rviz_config_manip.rviz
 worlds/empty.sdf
 worlds/empty.world
 worlds/obstacles.world

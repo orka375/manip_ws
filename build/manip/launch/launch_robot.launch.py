@@ -1,1 +1,1 @@
-/home/bfh/manip_ws/launch/launch_robot.launch.py
+/home/nbf2/manip_ws/launch/launch_robot.launch.py

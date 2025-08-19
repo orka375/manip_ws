@@ -1,0 +1,27 @@
+[0.571s] Invoking command in '/home/nbf2/manip_ws/build/manip': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nbf2/manip_ws/build/manip/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nbf2/manip_ws/install/manip/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/nbf2/manip_ws/build/manip/build --no-deps symlink_data
+[0.795s] running develop
+[0.923s] running egg_info
+[0.936s] writing manip.egg-info/PKG-INFO
+[0.936s] writing dependency_links to manip.egg-info/dependency_links.txt
+[0.936s] writing entry points to manip.egg-info/entry_points.txt
+[0.937s] writing requirements to manip.egg-info/requires.txt
+[0.937s] writing top-level names to manip.egg-info/top_level.txt
+[0.949s] reading manifest file 'manip.egg-info/SOURCES.txt'
+[0.950s] writing manifest file 'manip.egg-info/SOURCES.txt'
+[0.963s] running build_ext
+[0.976s] Creating /home/nbf2/manip_ws/install/manip/lib/python3.12/site-packages/manip.egg-link (link to .)
+[0.976s] Installing astolfi script to /home/nbf2/manip_ws/install/manip/lib/manip
+[0.977s] Installing blinker_node script to /home/nbf2/manip_ws/install/manip/lib/manip
+[0.977s] Installing heart_beat_node script to /home/nbf2/manip_ws/install/manip/lib/manip
+[0.977s] Installing lcddisplay script to /home/nbf2/manip_ws/install/manip/lib/manip
+[0.977s] Installing log_node script to /home/nbf2/manip_ws/install/manip/lib/manip
+[0.977s] Installing opcua_client_node script to /home/nbf2/manip_ws/install/manip/lib/manip
+[0.977s] Installing relay_control_node script to /home/nbf2/manip_ws/install/manip/lib/manip
+[0.977s] Installing ro_bridge script to /home/nbf2/manip_ws/install/manip/lib/manip
+[0.977s] Installing simreal_selector script to /home/nbf2/manip_ws/install/manip/lib/manip
+[0.977s] Installing statemachine script to /home/nbf2/manip_ws/install/manip/lib/manip
+[0.977s] Installing vmeter script to /home/nbf2/manip_ws/install/manip/lib/manip
+[0.977s] 
+[0.977s] Installed /home/nbf2/manip_ws/build/manip
+[0.977s] running symlink_data
+[0.999s] Invoked command in '/home/nbf2/manip_ws/build/manip' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nbf2/manip_ws/build/manip/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nbf2/manip_ws/install/manip/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/nbf2/manip_ws/build/manip/build --no-deps symlink_data

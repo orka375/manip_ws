@@ -1,1 +1,1 @@
-/home/bfh/manip_ws/build/manip/launch/rviz.launch.py
+/home/nbf2/manip_ws/build/manip/launch/rviz.launch.py
