@@ -9,7 +9,26 @@ controller_manager:
 
     pos_contr:
       type: position_controllers/JointGroupPositionController
-      
+
+    vel_contr:
+      type: velocity_controllers/JointGroupVelocityController
+
+
+vel_contr:
+  ros__parameters:
+    joints:
+      - arm_joint_1
+      - arm_joint_2
+      - arm_joint_3
+      - arm_joint_4
+      - arm_joint_5
+    command_interfaces:
+      - velocity
+    state_interfaces:
+      - position
+      - velocity
+
+
 
 pos_contr:
   ros__parameters:

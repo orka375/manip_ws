@@ -1,1 +1,0 @@
-/home/nbf2/manip_ws/launch/rviz.launch.py

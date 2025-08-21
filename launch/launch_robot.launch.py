@@ -99,13 +99,20 @@ def generate_launch_description():
             
     )
 
+    vel_contr_spawner = Node(
+            package='controller_manager',
+            executable='spawner',
+            arguments=["vel_contr"],
+            
+    )
 
-    # delayed_meca_drive_spawner = RegisterEventHandler(
-    #     event_handler=OnProcessExit(
-    #         target_action=joint_state_broadcaster_spawner,
-    #         on_exit=[pos_contr_spawner],
-    #     )
-    # )
+
+    delayed_pos_contr_spawner = RegisterEventHandler(
+        event_handler=OnProcessExit(
+            target_action=joint_state_broadcaster_spawner,
+            on_exit=[pos_contr_spawner],
+        )
+    )
 
 
 
@@ -159,6 +166,9 @@ def generate_launch_description():
         control_node,
         node_robot_state_publisher,
         joint_state_broadcaster_spawner,
+        # vel_contr_spawner,
+        # pos_contr_spawner,
+        delayed_pos_contr_spawner,
         # delay_rviz_after_joint_state_broadcaster_spawner,
         # delayed_meca_drive_spawner,
 

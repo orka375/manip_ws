@@ -1,1 +1,0 @@
-/home/nbf2/manip_ws/build/manip/launch/launch_sim.launch.py

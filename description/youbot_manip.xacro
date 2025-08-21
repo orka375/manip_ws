@@ -170,7 +170,7 @@
     <child link="arm_link_3"/>
     <axis xyz="0 1 0"/>
     <dynamics damping="1" friction="1"/>
-    <limit effort="10000.0" lower="-5.1836235" upper="0" velocity="1.570795"/>
+    <limit effort="10000.0" lower="-5.1836235" upper="5" velocity="1.570795"/>
     <!-- <limit effort="10000.0" lower="-5.1836235" upper="0.5" velocity="1.570795"/> -->
   </joint>
   <link name="arm_link_3">
@@ -310,12 +310,15 @@
     <gravity>true</gravity>
     <selfCollide>true</selfCollide>
   </gazebo>
+
+
+
   <transmission name="arm_trans_1">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="arm_joint_1"/>
     <actuator name="arm_motor_1">
       <hardwareInterface>EffortJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
+      <mechanicalReduction>156</mechanicalReduction>
     </actuator>
   </transmission>
   <transmission name="arm_trans_2">
@@ -323,7 +326,7 @@
     <joint name="arm_joint_2"/>
     <actuator name="arm_motor_2">
       <hardwareInterface>EffortJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
+      <mechanicalReduction>156</mechanicalReduction>
     </actuator>
   </transmission>
   <transmission name="arm_trans_3">
@@ -331,7 +334,7 @@
     <joint name="arm_joint_3"/>
     <actuator name="arm_motor_3">
       <hardwareInterface>EffortJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
+      <mechanicalReduction>71</mechanicalReduction>
     </actuator>
   </transmission>
   <transmission name="arm_trans_4">
@@ -339,7 +342,7 @@
     <joint name="arm_joint_4"/>
     <actuator name="arm_motor_4">
       <hardwareInterface>EffortJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
+      <mechanicalReduction>100</mechanicalReduction>
     </actuator>
   </transmission>
   <transmission name="arm_trans_5">
@@ -347,7 +350,7 @@
     <joint name="arm_joint_5"/>
     <actuator name="arm_motor_5">
       <hardwareInterface>EffortJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
+      <mechanicalReduction>100</mechanicalReduction>
     </actuator>
   </transmission>
 
